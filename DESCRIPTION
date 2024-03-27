@@ -8,9 +8,6 @@ Description: Your package description. It must end with a period (".") and
     include relevant bibliographical references if applicable, using the
     following format: Author et al. (2023) <doi:10.5281/zenodo.6619350>.
 License: MIT + file LICENSE
-Imports:
-    epiparameter,
-    shiny
 Suggests: 
     knitr,
     rmarkdown,
@@ -18,7 +15,6 @@ Suggests:
     testthat (>= 3.0.0)
 VignetteBuilder: 
     knitr
-Remotes: epiverse-trace/epiparameter
 Config/Needs/website: epiverse-trace/epiversetheme
 Config/testthat/edition: 3
 Config/testthat/parallel: true
