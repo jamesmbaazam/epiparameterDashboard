@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(packagetemplate)
+library(epiparameterDashboard)
 
-test_check("packagetemplate", stop_on_warning = FALSE)
+test_check("epiparameterDashboard", stop_on_warning = FALSE)
