@@ -1,0 +1,7 @@
+pkgload::load_all(".")
+epiparameterDashboard()
+usethis::use_package("shiny")
+usethis::use_package("pkgload")
+usethis::use_package("epiparameter")
+usethis::use_package("shinythemes")
+usethis::use_package("rsconnect")
