@@ -6,8 +6,8 @@ Authors@R:
            comment = c(ORCID = "0000-0001-5782-7330"))
 Description: A Dashboard for Visualising Epidemiological Parameters.
 License: MIT + file LICENSE
-Depends: 
-    R (>= 2.10)
+Depends:
+    R (>= 3.6.0)
 Imports: 
     epiparameter,
     shiny,
