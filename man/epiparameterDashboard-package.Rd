@@ -7,6 +7,13 @@
 \description{
 A Dashboard for Visualising Epidemiological Parameters.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/jamesmbaazam/epiparameterDashboard}
+}
+
+}
 \author{
 \strong{Maintainer}: James M. Azam \email{james.azam@lshtm.ac.uk} (\href{https://orcid.org/0000-0001-5782-7330}{ORCID})
 
