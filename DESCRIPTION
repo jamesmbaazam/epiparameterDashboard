@@ -11,6 +11,8 @@ Depends:
     R (>= 3.6.0)
 Imports: 
     epiparameter,
+    pkgload,
+    rsconnect,
     shiny,
     shinythemes
 Suggests: 
