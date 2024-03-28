@@ -1,6 +1,19 @@
-library(shiny)
-library(shinythemes)
-
+#' Epiparameter Dashboard
+#'
+#' @param ...Not used
+#' @importFrom epiparameter epidist_db get_citation
+#' @importFrom shiny shinyApp fluidPage titlePanel markdown sidebarLayout
+#' sidebarPanel mainPanel selectInput plotOutput textOutput verbatimTextOutput
+#' renderPlot renderText renderPrint
+#' @importFrom shinythemes shinytheme
+#' @return
+#' A shiny app that visualises epidemiological parameters.
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' epiparameterDashboard()
+#' }
 epiparameterDashboard <- function(...) {
 epiparameter_data <- epiparameter_data
 # Define UI for app that draws a histogram ----
