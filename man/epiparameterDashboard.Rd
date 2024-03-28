@@ -7,7 +7,7 @@
 epiparameterDashboard(...)
 }
 \arguments{
-\item{...Not}{used}
+\item{...}{Not used}
 }
 \value{
 A shiny app that visualises epidemiological parameters.
