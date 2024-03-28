@@ -1,6 +1,5 @@
 library(shiny)
 library(shinythemes)
-library(bslib)
 
 epiparameterDashboard <- function(...) {
 epiparameter_data <- epiparameter_data
