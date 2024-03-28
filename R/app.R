@@ -77,7 +77,7 @@ ui <- shiny::fluidPage(
       plot(edist)
     })
     output$citation_header <- shiny::renderText({
-      shiny::markdown("Citation")
+      print("Citation")
     })
     output$citation <- shiny::renderPrint({
       edist_citation <- epiparameter::get_citation(edist())
