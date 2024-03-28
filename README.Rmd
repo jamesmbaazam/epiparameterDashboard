@@ -27,7 +27,8 @@ knitr::opts_chunk$set(
 [![lifecycle-concept](https://raw.githubusercontent.com/reconverse/reconverse.github.io/master/images/badge-concept.svg)](https://www.reconverse.org/lifecycle.html#concept) 
 <!-- badges: end -->
 
-{{ packagename }} provides functions to ....
+{{ packagename }} provides a dashboard to explore the database of epidemiological parameters
+provided by the [epiparameter](epiverse-trace/epiparameter) package.
 
 <!-- This sentence is optional and can be removed -->
 {{ packagename }} is developed at the [CENTER|similar](url) at the [UNIVERSITY|similar](url) as part of the [Epiverse-TRACE program](https://data.org/initiatives/epiverse/).
@@ -44,8 +45,13 @@ pak::pak("{{ gh_repo }}")
 
 ## Example
 
-These examples illustrate some of the current functionalities
+To access the dashboard after installing the package, run
 
+``` r
+library({{ packagename }})
+
+epiparameterDashboard::epiparameterDashboard()
+``
 
 ## Development
 
