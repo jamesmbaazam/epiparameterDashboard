@@ -5,7 +5,7 @@
 <!-- `packagename` is extracted from the DESCRIPTION file -->
 <!-- `gh_repo` is extracted via a special environment variable in GitHub Actions -->
 
-# packagetemplate <img src="man/figures/logo.svg" align="right" width="120" alt="" />
+# epiparameterDashboard <img src="man/figures/logo.svg" align="right" width="120" alt="" />
 
 <!-- badges: start -->
 
@@ -17,27 +17,32 @@ coverage](https://codecov.io/gh/jamesmbaazam/epiparameterDashboard/branch/main/g
 [![lifecycle-concept](https://raw.githubusercontent.com/reconverse/reconverse.github.io/master/images/badge-concept.svg)](https://www.reconverse.org/lifecycle.html#concept)
 <!-- badges: end -->
 
-packagetemplate provides functions to ….
+epiparameterDashboard provides a dashboard to explore the database of
+epidemiological parameters provided by the
+[epiparameter](epiverse-trace/epiparameter) package.
 
-<!-- This sentence is optional and can be removed -->
+## Demo
 
-packagetemplate is developed at the [CENTER\|similar](url) at the
-[UNIVERSITY\|similar](url) as part of the [Epiverse-TRACE
-program](https://data.org/initiatives/epiverse/).
+Access the live dashboard
+[here](https://james-mba-azam.shinyapps.io/epiparameterdashboard/).
 
-## Installation
+If you prefer to run the dashboard locally, you can do so with the
+following code:
 
-You can install the development version of packagetemplate from
-[GitHub](https://github.com/) with:
+\`\`\` r \# Install pak if not already installed if
+(!requireNamespace(“pak”, quietly = TRUE)) { install.packages(“pak”) }
 
-``` r
-# install.packages("pak")
-pak::pak("jamesmbaazam/epiparameterDashboard")
-```
+# Install the package
 
-## Example
+pak::pak(“jamesmbaazam/epiparameterDashboard”)
 
-These examples illustrate some of the current functionalities
+# Load the package
+
+library(epiparameterDashboard)
+
+# Run the dashboard
+
+epiparameterDashboard() \`\`
 
 ## Development
 
@@ -60,7 +65,7 @@ languages, but also differs from them in the following aspects:
 
 ### Code of Conduct
 
-Please note that the packagetemplate project is released with a
+Please note that the epiparameterDashboard project is released with a
 [Contributor Code of
 Conduct](https://github.com/epiverse-trace/.github/blob/main/CODE_OF_CONDUCT.md).
 By contributing to this project, you agree to abide by its terms.
