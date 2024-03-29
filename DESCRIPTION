@@ -9,12 +9,6 @@ License: MIT + file LICENSE
 URL: https://github.com/jamesmbaazam/epiparameterDashboard
 Depends:
     R (>= 3.6.0)
-Imports: 
-    epiparameter,
-    pkgload,
-    rsconnect,
-    shiny,
-    shinythemes
 Suggests: 
     knitr,
     rmarkdown,
