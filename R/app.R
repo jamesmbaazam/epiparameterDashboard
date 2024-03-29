@@ -15,7 +15,6 @@
 #' epiparameterDashboard()
 #' }
 epiparameterDashboard <- function(...) {
-epiparameter_data <- epiparameter_data
 # Define UI for app that draws a histogram ----
 ui <- shiny::fluidPage(
     theme = shinythemes::shinytheme("superhero"),
