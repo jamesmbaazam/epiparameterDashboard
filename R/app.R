@@ -61,7 +61,7 @@ ui <- shiny::fluidPage(
         shiny::verbatimTextOutput("citation")
       )
     )
-  )
+)
   # Define server logic required to draw a histogram ----
   server <- function(input, output) {
     # This expression that generates a histogram is wrapped in a call
