@@ -16,3 +16,4 @@
 ^CITATION\.cff$
 ^_pkgdown\.yml$
 app.R
+^descriptions_md$
