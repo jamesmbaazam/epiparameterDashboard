@@ -29,20 +29,21 @@ Access the live dashboard
 If you prefer to run the dashboard locally, you can do so with the
 following code:
 
-\`\`\` r \# Install pak if not already installed if
-(!requireNamespace(“pak”, quietly = TRUE)) { install.packages(“pak”) }
+``` r
+# Install pak if not already installed
+if (!requireNamespace("pak", quietly = TRUE)) {
+  install.packages("pak")
+}
 
 # Install the package
-
-pak::pak(“jamesmbaazam/epiparameterDashboard”)
+pak::pak("jamesmbaazam/epiparameterDashboard")
 
 # Load the package
-
 library(epiparameterDashboard)
 
 # Run the dashboard
-
-epiparameterDashboard() \`\`
+epiparameterDashboard()
+```
 
 ## Development
 
