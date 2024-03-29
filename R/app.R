@@ -90,6 +90,5 @@ ui <- shiny::fluidPage(
           print(edist_citation)
     })
   }
-
-shiny::shinyApp(ui, server)
+  shiny::shinyApp(ui, server)
 }
