@@ -17,7 +17,7 @@
 epiparameterDashboard <- function(...) {
 # Define UI for app that draws a histogram ----
 ui <- shiny::fluidPage(
-    theme = shinythemes::shinytheme("superhero"),
+    theme = shinythemes::shinytheme("darkly"),
     # App title ----
     shiny::titlePanel("A Dashboard for Visualising Epidemiological Parameters"),
     shiny::markdown(
