@@ -37,7 +37,7 @@ Access the live dashboard [here](https://james-mba-azam.shinyapps.io/epiparamete
 If you prefer to run the dashboard locally, you can do so with the following
 code:
 
-``` r
+```r
 # Install pak if not already installed
 if (!requireNamespace("pak", quietly = TRUE)) {
   install.packages("pak")
@@ -51,7 +51,7 @@ library({{ packagename }})
 
 # Run the dashboard
 epiparameterDashboard()
-``
+```
 
 ## Development
 
