@@ -19,7 +19,9 @@ epiparameterDashboard <- function(...) {
 ui <- shiny::fluidPage(
     theme = shinythemes::shinytheme("darkly"),
     # App title ----
-    shiny::titlePanel("A Dashboard for Visualising Epidemiological Parameters"),
+    shiny::titlePanel("A Dashboard for Visualising Published Epidemiological
+                      Parameters"
+    ),
     shiny::markdown(
       "This dashboard provides a quick way to visualise some epidemiological
       parameters reported in the literature. It harnesses the epidemiological
