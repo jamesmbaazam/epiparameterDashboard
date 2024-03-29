@@ -2,14 +2,10 @@ CMD
 Codecov
 Epiverse
 Lifecycle
-Mariscal
 ORCID
-Pavlich
 RECON
-Titlecase
 codecov
 com
-doi
 epidist
 epiparameter
 gh
@@ -19,4 +15,6 @@ lifecycle
 packagename
 svg
 yaml
-zenodo
+jamesmbaazam
+pak
+requireNamespace
