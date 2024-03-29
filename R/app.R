@@ -79,6 +79,8 @@ ui <- shiny::fluidPage(
     output$citation_header <- shiny::renderText({
       print("Citation")
     })
+    # renderPrint() is used because the citation is of class bibentry, which
+    # has no method for cat(), which is used by renderText()
     output$citation <- shiny::renderPrint({
       edist_citation <- epiparameter::get_citation(edist())
           print(edist_citation)
