@@ -2,6 +2,7 @@
 % Please edit documentation in R/package.R
 \docType{package}
 \name{epiparameterDashboard-package}
+\alias{epiparameterDashboard}
 \alias{epiparameterDashboard-package}
 \title{epiparameterDashboard: A Dashboard for Visualising Epidemiological Parameters}
 \description{
