@@ -30,27 +30,27 @@ knitr::opts_chunk$set(
 {{ packagename }} provides a dashboard to explore the database of epidemiological parameters
 provided by the [epiparameter](epiverse-trace/epiparameter) package.
 
-<!-- This sentence is optional and can be removed -->
-{{ packagename }} is developed at the [CENTER|similar](url) at the [UNIVERSITY|similar](url) as part of the [Epiverse-TRACE program](https://data.org/initiatives/epiverse/).
+## Demo
 
-## Installation
+Access the live dashboard [here](https://james-mba-azam.shinyapps.io/epiparameterdashboard/).
 
-You can install the development version of {{ packagename }} from
-[GitHub](https://github.com/) with:
+If you prefer to run the dashboard locally, you can do so with the following
+code:
 
 ``` r
-# install.packages("pak")
+# Install pak if not already installed
+if (!requireNamespace("pak", quietly = TRUE)) {
+  install.packages("pak")
+}
+
+# Install the package
 pak::pak("{{ gh_repo }}")
-```
 
-## Example
-
-To access the dashboard after installing the package, run
-
-``` r
+# Load the package
 library({{ packagename }})
 
-epiparameterDashboard::epiparameterDashboard()
+# Run the dashboard
+epiparameterDashboard()
 ``
 
 ## Development
