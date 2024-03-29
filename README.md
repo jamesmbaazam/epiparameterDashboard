@@ -21,29 +21,28 @@ epiparameterDashboard provides a dashboard to explore the database of
 epidemiological parameters provided by the
 [epiparameter](epiverse-trace/epiparameter) package.
 
-<!-- This sentence is optional and can be removed -->
+## Demo
 
-epiparameterDashboard is developed at the [CENTER\|similar](url) at the
-[UNIVERSITY\|similar](url) as part of the [Epiverse-TRACE
-program](https://data.org/initiatives/epiverse/).
+Access the live dashboard
+[here](https://james-mba-azam.shinyapps.io/epiparameterdashboard/).
 
-## Installation
+If you prefer to run the dashboard locally, you can do so with the
+following code:
 
-You can install the development version of epiparameterDashboard from
-[GitHub](https://github.com/) with:
+\`\`\` r \# Install pak if not already installed if
+(!requireNamespace(“pak”, quietly = TRUE)) { install.packages(“pak”) }
 
-``` r
-# install.packages("pak")
-pak::pak("jamesmbaazam/epiparameterDashboard")
-```
+# Install the package
 
-## Example
+pak::pak(“jamesmbaazam/epiparameterDashboard”)
 
-To access the dashboard after installing the package, run
+# Load the package
 
-\`\`\` r library(epiparameterDashboard)
+library(epiparameterDashboard)
 
-epiparameterDashboard::epiparameterDashboard() \`\`
+# Run the dashboard
+
+epiparameterDashboard() \`\`
 
 ## Development
 
