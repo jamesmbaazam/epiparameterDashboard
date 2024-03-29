@@ -1,6 +1,5 @@
 CMD
 Codecov
-Epiverse
 Lifecycle
 ORCID
 RECON
@@ -11,10 +10,10 @@ epiparameter
 gh
 github
 io
+jamesmbaazam
 lifecycle
 packagename
-svg
-yaml
-jamesmbaazam
 pak
 requireNamespace
+svg
+yaml
