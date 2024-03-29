@@ -23,14 +23,19 @@ ui <- shiny::fluidPage(
                       Parameters"
     ),
     shiny::markdown(
-      "This dashboard provides a quick way to visualise some epidemiological
-      parameters reported in the literature. It harnesses the epidemiological
-      database, classes, and methods provided in the
-      [epiparameter](epiverse-trace/epiparameter) package.
+      "This dashboard provides a quick way to visualise the epidemiological
+      parameters stored in the
+      [epiparameter R package](epiverse-trace/epiparameter).
 
-      This is a minimum viable product in very early stages with endless room
-      for improvement. If you have any feedback, please feel free to open an
-      issue or discussion on the package's
+      The dashboard is intended to reduce the barrier of entry for those
+      interested in exploring epidemiological parameters. It is designed to
+      be user-friendly and interactive, allowing users to select a disease
+      and an epidemiological parameter to visualise. If the user is satisfied
+      with the visualised parameter, they can copy the citation for the
+      parameter directly from the \"citation\" field of the dashboard.
+
+      This dashboard is a proof of concept. If you have any feedback, please
+      feel free to open an issue or discussion on the package's
       [GitHub repository](github.com/jamesmbaazam/epiparameterDashboard)."
     ),
     # Sidebar panel for inputs ----
