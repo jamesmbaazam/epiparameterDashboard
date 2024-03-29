@@ -6,6 +6,7 @@
 #' sidebarPanel mainPanel selectInput plotOutput textOutput verbatimTextOutput
 #' renderPlot renderText renderPrint
 #' @importFrom shinythemes shinytheme
+#' @importFrom htmltools includeMarkdown
 #' @return
 #' A shiny app that visualises epidemiological parameters.
 #' @export
