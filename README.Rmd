@@ -32,25 +32,15 @@ provided by the [epiparameter](epiverse-trace/epiparameter) package.
 
 ## Demo
 
-Access the live dashboard [here](https://james-mba-azam.shinyapps.io/epiparameterdashboard/).
+You can access the deployed dashboard [here](https://james-mba-azam.shinyapps.io/epiparameterdashboard/).
 
-If you prefer to run the dashboard locally, you can do so with the following
-code:
+Alternatively, you can run with the following code in your R console. It will download the app and run it in your browser.
 
 ```r
-# Install pak if not already installed
-if (!requireNamespace("pak", quietly = TRUE)) {
-  install.packages("pak")
-}
-
-# Install the package
-pak::pak("{{ gh_repo }}")
-
-# Load the package
-library({{ packagename }})
-
-# Run the dashboard
-epiparameterDashboard()
+# Install the shiny package if not already installed
+if (!require("shiny")) install.packages("shiny")
+# Download and launch the dashboard
+shiny::runGitHub("epiparameterDashboard", "jamesmbaazam")
 ```
 
 ## Development
@@ -64,12 +54,7 @@ for use outside of the development team.
 
 ### Contributions
 
-Contributions are welcome via [pull requests](https://github.com/{{ gh_repo }}/pulls).
-
-### Related projects
-
-This project is related to other existing projects in R or other languages, but also differs from them in the following aspects:
-
+If you have ideas to improve the app, you can [file an issue](https://github.com/{{ gh_repo }}/issues). Contributions are also welcome via [pull requests](https://github.com/{{ gh_repo }}/pulls).
 
 ### Code of Conduct
 

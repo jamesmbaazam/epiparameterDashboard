@@ -5,44 +5,35 @@
 <!-- `packagename` is extracted from the DESCRIPTION file -->
 <!-- `gh_repo` is extracted via a special environment variable in GitHub Actions -->
 
-# epiparameterDashboard <img src="man/figures/logo.svg" align="right" width="120" alt="" />
+# {{ packagename }} <img src="man/figures/logo.svg" align="right" width="120" alt="" />
 
 <!-- badges: start -->
 
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit/)
-[![R-CMD-check](https://github.com/jamesmbaazam/epiparameterDashboard/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jamesmbaazam/epiparameterDashboard/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/%7B%7B%20gh_repo%20%7D%7D/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/%7B%7B%20gh_repo%20%7D%7D/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
-coverage](https://codecov.io/gh/jamesmbaazam/epiparameterDashboard/branch/main/graph/badge.svg)](https://app.codecov.io/gh/jamesmbaazam/epiparameterDashboard?branch=main)
+coverage](https://codecov.io/gh/%7B%7B%20gh_repo%20%7D%7D/branch/main/graph/badge.svg)](https://app.codecov.io/gh/%7B%7B%20gh_repo%20%7D%7D?branch=main)
 [![lifecycle-concept](https://raw.githubusercontent.com/reconverse/reconverse.github.io/master/images/badge-concept.svg)](https://www.reconverse.org/lifecycle.html#concept)
 <!-- badges: end -->
 
-epiparameterDashboard provides a dashboard to explore the database of
+{{ packagename }} provides a dashboard to explore the database of
 epidemiological parameters provided by the
 [epiparameter](epiverse-trace/epiparameter) package.
 
 ## Demo
 
-Access the live dashboard
+You can access the deployed dashboard
 [here](https://james-mba-azam.shinyapps.io/epiparameterdashboard/).
 
-If you prefer to run the dashboard locally, you can do so with the
-following code:
+Alternatively, you can run with the following code in your R console. It
+will download the app and run it in your browser.
 
 ``` r
-# Install pak if not already installed
-if (!requireNamespace("pak", quietly = TRUE)) {
-  install.packages("pak")
-}
-
-# Install the package
-pak::pak("jamesmbaazam/epiparameterDashboard")
-
-# Load the package
-library(epiparameterDashboard)
-
-# Run the dashboard
-epiparameterDashboard()
+# Install the shiny package if not already installed
+if (!require("shiny")) install.packages("shiny")
+# Download and launch the dashboard
+shiny::runGitHub("epiparameterDashboard", "jamesmbaazam")
 ```
 
 ## Development
@@ -56,17 +47,14 @@ package is not ready for use outside of the development team.
 
 ### Contributions
 
-Contributions are welcome via [pull
-requests](https://github.com/jamesmbaazam/epiparameterDashboard/pulls).
-
-### Related projects
-
-This project is related to other existing projects in R or other
-languages, but also differs from them in the following aspects:
+If you have ideas to improve the app, you can [file an
+issue](https://github.com/%7B%7B%20gh_repo%20%7D%7D/issues).
+Contributions are also welcome via [pull
+requests](https://github.com/%7B%7B%20gh_repo%20%7D%7D/pulls).
 
 ### Code of Conduct
 
-Please note that the epiparameterDashboard project is released with a
+Please note that the {{ packagename }} project is released with a
 [Contributor Code of
 Conduct](https://github.com/epiverse-trace/.github/blob/main/CODE_OF_CONDUCT.md).
 By contributing to this project, you agree to abide by its terms.
